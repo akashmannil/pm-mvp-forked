@@ -184,6 +184,7 @@ section { position: relative; }
     color: #fff;
     border: 1px solid rgba(255, 255, 255, .35);
     background: rgba(255, 255, 255, .06);
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
 }
 .btn-outline-light:hover { background: rgba(255, 255, 255, .16); transform: translateY(-3px); }
@@ -241,8 +242,7 @@ section { position: relative; }
 
 .nav.scrolled {
     height: 66px;
-    background: rgba(255, 255, 255, .85);
-    backdrop-filter: saturate(180%) blur(14px);
+    background: #fff;
     box-shadow: 0 6px 24px -16px rgba(10, 21, 48, .5);
     border-bottom: 1px solid var(--line);
 }
@@ -355,6 +355,7 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 22px; transform: rotate(-45d
     border-radius: var(--r-pill);
     background: rgba(255, 255, 255, .1);
     border: 1px solid rgba(255, 255, 255, .18);
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     font-size: .85rem;
     margin-bottom: 26px;
@@ -553,6 +554,7 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 22px; transform: rotate(-45d
     font-family: var(--font-head); font-weight: 600;
     font-size: .74rem; letter-spacing: .04em;
     padding: 6px 12px; border-radius: var(--r-pill);
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
 }
 .course-level {
@@ -655,7 +657,7 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 22px; transform: rotate(-45d
     background: rgba(10, 21, 48, .82); color: #fff;
     font-family: var(--font-head); font-weight: 600;
     text-align: center; padding: 8px 12px; border-radius: 12px;
-    line-height: 1; backdrop-filter: blur(4px);
+    line-height: 1; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px);
 }
 .news-date b { display: block; font-size: 1.25rem; }
 .news-date span { font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; opacity: .8; }
@@ -870,6 +872,7 @@ body.menu-open .nav-toggle span:nth-child(3) { top: 22px; transform: rotate(-45d
     .nav-backdrop {
         position: fixed; inset: 0;
         background: rgba(5, 10, 24, .5);
+        -webkit-backdrop-filter: blur(2px);
         backdrop-filter: blur(2px);
         opacity: 0; visibility: hidden;
         transition: opacity .4s, visibility .4s;
